@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Helmet} from "react-helmet";
+import GalleryElement from "./components/GalleryElement";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <GalleryElement id="6939156080199027973"></GalleryElement>
+        <GalleryElement id="6933649276861975813"></GalleryElement>
+        <GalleryElement id="6718335390845095173"></GalleryElement>
+      </div>
+      <Helmet>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+      </Helmet>
     </div>
   );
 }

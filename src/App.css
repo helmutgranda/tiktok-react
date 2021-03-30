@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -13,19 +13,22 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 30%), 0.5fr));
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +39,32 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 655px) {
+  .tiktok-embed {
+      margin:0 25px
+  }
+}
+
+.tiktok-embed {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 18px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.15;
+  overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  font-family: proxima-regular,PingFangSC,sans-serif;
+  font-weight: 400
+}
+
+.tiktok-embed ::-webkit-scrollbar {
+  display: none
+}
+.tiktok-embed iframe {
+  border: none
+}
+
